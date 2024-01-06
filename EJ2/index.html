@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Cambio de divisas</title>
+    
+</head>
+<body>
+   <center>
+    
+        <H2>Elija la conversion que desea</H2>
+        <hr>
+       
+        <h3>Moneda actual</h3>
+        
+            <select name="actual1" id="actual1">
+                <option value="CLP">CLP</option>
+                <option value="ARS">ARS</option>
+                <option value="USD">USD</option>
+                <option value="GBP">GBP</option>
+                <option value="TRY">TRY</option>
+            </select>
+
+            <hr>
+            <h3>Moneda a la que desea convertir</h3>
+         
+                <select name="cambio1" id="cambio1">
+                    <option value="CLP">CLP</option>
+                    <option value="ARS">ARS</option>
+                    <option value="USD">USD</option>
+                    <option value="GBP">GBP</option>
+                    <option value="TRY">TRY</option>
+                </select>
+
+                <br>
+                <br>
+                <hr>
+                <h3>Ingrese la cantidad</h3>
+                <input type="number" id="cantidad">
+
+                <hr>
+               <button type="button" onclick="Convertir()" class="btn btn-primary">Convertir</button>
+                <hr>
+                <div >
+                    <label id="totalNuevo">   </label>
+                </div>
+
+                <br><br>
+                <button class="btn btn-success">Retirar</button>
+     </center>
+
+     <script src="main.js">main.js</script>  
+</body>
+</html>
